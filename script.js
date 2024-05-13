@@ -24,5 +24,7 @@ const getGrade = (score) => {
 // console.log(getGrade(56)); // F
 
 const hasPassingGrade = (score) => {
-
+    let grade = getGrade(score)
+    if (grade !== "F"){return true}
+    else {return false}
 }
