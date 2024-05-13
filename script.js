@@ -28,3 +28,16 @@ const hasPassingGrade = (score) => {
     if (grade !== "F"){return true}
     else {return false}
 }
+
+const studentMsg = (totalScores, studentScore) => {
+    let average = getAverage(totalScores)
+    let grade = getGrade(studentScore)
+    if (grade !== "F") {
+        return `Class average: ${average}. Your grade: ${grade}. You passed the course.`
+    } else {
+        return `Class average: ${average}. Your grade: ${grade}. You failed the course.
+        `
+    }
+}
+
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37)); // "Class average: 71.7. Your grade: F. You failed the course."
