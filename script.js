@@ -19,6 +19,10 @@ const getGrade = (score) => {
     else {return "F"}
 }
 
-console.log(getGrade(96)); // A
-console.log(getGrade(82)); // B
-console.log(getGrade(56)); // F
+// console.log(getGrade(96)); // A
+// console.log(getGrade(82)); // B
+// console.log(getGrade(56)); // F
+
+const hasPassingGrade = (score) => {
+
+}
